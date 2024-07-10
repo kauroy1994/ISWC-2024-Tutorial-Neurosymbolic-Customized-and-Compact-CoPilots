@@ -17,7 +17,8 @@ Large Language Models (LLMs) are credible with open-domain interactions such as 
 6. Amit Sheth, Kaushik Roy, and Manas Gaur. Neurosymbolic artificial intelligence (why, what, and how). IEEE Intelligent Systems, 38(3):56–62, 2023.
 
 # Example Scenario
-A Vision for a neurosymbolic compact and customized multi-agent copilot framework for facilitating discussions between healthcare professionals by navigating intricate information layers at school and district administration levels in a healthcare system (This example is from the [MTSS system](https://ed.sc.gov/instruction/early-learning-and-literacy/multi-tiered-system-of-supports-mtss/)).
+💡 A Vision for a neurosymbolic compact and customized multi-agent copilot framework for facilitating discussions between healthcare professionals by navigating intricate information layers at school and district administration levels in a healthcare system (This example is from the [MTSS system](https://ed.sc.gov/instruction/early-learning-and-literacy/multi-tiered-system-of-supports-mtss/)).
+
 ![image](https://github.com/kauroy1994/ISWC-2024-Tutorial-Neurosymbolic-Customized-and-Compact-CoPilots/assets/57400980/be16fb07-30a8-4035-8480-fd0ff1e14064)
 
 
