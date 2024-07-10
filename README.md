@@ -17,5 +17,5 @@ Large Language Models (LLMs) are credible with open-domain interactions such as 
 6. Amit Sheth, Kaushik Roy, and Manas Gaur. Neurosymbolic artificial intelligence (why, what, and how). IEEE Intelligent Systems, 38(3):56–62, 2023.
 
 # 📰 Slides
-Comming 🔜
+🔜 Comming soon .. 
 
