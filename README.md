@@ -1,4 +1,5 @@
-# Tutorial Title: Neurosymbolic-Customized-and-Compact-CoPilots ℹ️ Authors: [Kaushik Roy](https://kauroy1994.github.io/home/), [Megha Chakraborty](https://scholar.google.com/citations?hl=en&user=Jqq0mHoAAAAJ), [Yuxin Zi](http://linkedin.com/in/yuxin-zi), [Manas Gaur](https://cs.umbc.edu/manas), and [Amit Sheth](http://aiisc.ai/amit)
+# Tutorial Title: Neurosymbolic-Customized-and-Compact-CoPilots 
+# ℹ️ Authors: [Kaushik Roy](https://kauroy1994.github.io/home/), [Megha Chakraborty](https://scholar.google.com/citations?hl=en&user=Jqq0mHoAAAAJ), [Yuxin Zi](http://linkedin.com/in/yuxin-zi), [Manas Gaur](https://cs.umbc.edu/manas), and [Amit Sheth](http://aiisc.ai/amit)
 
 📰 Preprint link: [Neurosymbolic Customized and Compact CoPilots](https://scholarcommons.sc.edu/cgi/viewcontent.cgi?article=1628&context=aii_fac_pub)
 
