@@ -109,9 +109,9 @@ This dual filtering ensures that only **relevant and accurate answers** are prov
 - **Top Matched Question**: "What is the role of administrators in MTSS?"
 - **Answer**: "Administrators oversee the MTSS process and ensure resources are allocated."
 - **Knowledge Panel**: 
-  ```
+  
   **Administrators** oversee **MTSS process**
-  ```
+  
 
 ### Requirements
 
