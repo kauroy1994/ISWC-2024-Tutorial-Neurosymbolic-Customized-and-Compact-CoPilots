@@ -22,6 +22,103 @@ Large Language Models (LLMs) are credible with open-domain interactions such as 
 ![image](https://github.com/kauroy1994/ISWC-2024-Tutorial-Neurosymbolic-Customized-and-Compact-CoPilots/assets/57400980/be16fb07-30a8-4035-8480-fd0ff1e14064)
 
 
-# 📰 Slides
+## 📰 Slides
 🔜 Comming soon .. 
 
+# Neuro-Symbolic Question-Answer Knowledge Search System
+
+This repository implements a **Question-Answer Knowledge Search System** using **neuro-symbolic AI** principles. The system processes queries, retrieves relevant questions from a user-provided QA dataset, and generates a knowledge panel with extracted entities and relationships. The architecture effectively combines **neural network-based** language understanding and **symbolic reasoning** for precise query answering.
+
+## Key Features
+
+- **Neuro-Symbolic Design**: Combines the strengths of neural methods (deep learning models for sentence embeddings) with symbolic reasoning (knowledge graph-based similarity).
+- **User-Customizable**: The system dynamically adapts to the user's **QA dataset** in JSON format and extracts insights from the provided questions and answers.
+- **Compact and Efficient**: Utilizes **lightweight models** such as `MiniLM-L6-v2` with relatively modest parameters, ensuring fast performance and lower computational costs.
+
+## Architecture Overview
+
+### 1. **Neuro-Symbolic Design**
+The system leverages a **neuro-symbolic approach**, which combines:
+   - **Neural Networks**: We use **SentenceTransformers** to generate dense embeddings for the questions and queries. This neural model helps compute similarity scores between the query and dataset questions based on the semantic meaning of sentences.
+   - **Symbolic Knowledge Representation**: The system uses **Spacy** to extract **subject-verb-object (SVO)** triples from both the query and the top matched answers. These triples represent relationships and entities in a structured, symbolic manner, forming a lightweight **knowledge graph**.
+
+The combination of these two approaches ensures that the system can:
+   - Understand the **semantic meaning** of queries and answers (neural).
+   - Reason about the **explicit relationships** between entities (symbolic).
+
+### 2. **Customization to the User's QA Dataset**
+
+The system is designed to be highly flexible and customizable:
+   - It accepts any **JSON-formatted dataset** of questions and answers, which is dynamically processed during runtime. The dataset can include any domain-specific questions and answers, making it adaptable to various contexts (e.g., **tax assistance**, **medical support**, etc.).
+   - The user can update the dataset with new questions and answers without modifying the codebase. The system automatically adjusts to the new content and generates results accordingly.
+
+### 3. **Compactness: Lightweight and Efficient Models**
+
+Despite its powerful neuro-symbolic design, the system is highly efficient:
+   - The **SentenceTransformer model** used in this system, `MiniLM-L6-v2`, is a compact and efficient transformer-based language model with only **33 million parameters**, significantly smaller than many other transformer models like BERT or GPT.
+   - The symbolic reasoning component using **Spacy** operates efficiently, extracting relationships from text with minimal computational overhead.
+
+### Design Components
+
+#### Neural Component
+- **SentenceTransformers** (`MiniLM-L6-v2`): This model is a **smaller variant** of transformer-based language models. It is optimized for efficiency and speed, making it a great choice for systems where performance and low resource consumption are important.
+- The model generates **semantic embeddings** for both the user's query and the dataset questions. These embeddings allow the system to measure **semantic similarity** using **cosine similarity**.
+
+#### Symbolic Component
+- **Spacy**: We use Spacy to extract **SVO (subject-verb-object) triples** from the query and the matched answers. These triples are then compared to calculate a **knowledge-graph-based similarity** between the query and answers.
+- This **symbolic reasoning** enhances the system's interpretability and allows it to handle **structural relationships** in the text.
+
+### Query Filtering Mechanism
+
+To ensure the system only provides relevant answers, a filtering mechanism is applied:
+- **Neural Similarity**: Queries must pass a neural similarity threshold. If the neural similarity score between the query and the dataset questions is below a certain threshold (e.g., **0.6**), the system responds with a boilerplate message.
+- **Knowledge Graph Similarity**: If the query passes the neural threshold, the system checks the similarity between **SVO triples** extracted from the query and the matched answer. If this knowledge-graph similarity score is below a threshold (e.g., **0.5**), the system returns a boilerplate response: *"Sorry, we don't have sufficient information to answer this query."*
+
+This dual filtering ensures that only **relevant and accurate answers** are provided to the user.
+
+### Usage
+
+#### Setup and Customization
+
+1. **Customize the Dataset**: 
+   - To use the system, simply provide a **JSON file** containing your domain-specific **questions and answers**. The system will adapt to any content you provide without requiring code changes.
+
+   Example JSON format:
+   ```json
+   [
+       {
+           "question": "What is the role of administrators in MTSS?",
+           "answer": "Administrators oversee the MTSS process and ensure resources are allocated."
+       },
+       {
+           "question": "How does MTSS help students?",
+           "answer": "MTSS provides targeted interventions based on student performance data."
+       }
+   ]
+   ```
+
+2. **Run the Application**:
+   After setting up the dataset and installing dependencies, you can run the Gradio app to interact with the system in a browser.
+
+   ```bash
+   python main.py
+   ```
+
+#### Query Example:
+- **Query**: "How do administrators support the MTSS process?"
+- **Top Matched Question**: "What is the role of administrators in MTSS?"
+- **Answer**: "Administrators oversee the MTSS process and ensure resources are allocated."
+- **Knowledge Panel**: 
+  ```
+  **Administrators** oversee **MTSS process**
+  ```
+
+### Requirements
+
+- Python 3.7+
+- `gradio`, `spacy`, `sentence-transformers`, `torch`, `matplotlib`, `pillow`, `numpy`
+
+### Efficiency Considerations
+
+- The model uses the **MiniLM-L6-v2**, a transformer model with only **33 million parameters**. This ensures a balance between **performance** and **accuracy** while keeping resource consumption low.
+- **Spacy** for symbolic triple extraction is lightweight, ensuring that the symbolic reasoning layer adds minimal overhead.
