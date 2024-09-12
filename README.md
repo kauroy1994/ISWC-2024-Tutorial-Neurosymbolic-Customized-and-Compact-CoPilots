@@ -16,12 +16,40 @@ Large Language Models (LLMs) are credible with open-domain interactions such as 
 5. Amit Sheth, Manas Gaur, Kaushik Roy, Revathy Venkataraman, and Vedant Khandelwal. Process knowledge-infused ai: Toward user-level explainability, interpretability, and safety. IEEE Internet Computing, 2022.
 6. Amit Sheth, Kaushik Roy, and Manas Gaur. Neurosymbolic artificial intelligence (why, what, and how). IEEE Intelligent Systems, 38(3):56–62, 2023.
 
-## Example Scenario
-💡 A Vision for a neurosymbolic compact and customized multi-agent copilot framework for facilitating discussions between healthcare professionals by navigating intricate information layers at school and district administration levels in a healthcare system (This example is from the [MTSS system](https://ed.sc.gov/instruction/early-learning-and-literacy/multi-tiered-system-of-supports-mtss/)).
+## 🤖 Copilot Examples
+#### 🥣 Nourish Co-pilot: Custom, Compact, and NeuroSymbolic Diet AI Model
 
-![image](https://github.com/kauroy1994/ISWC-2024-Tutorial-Neurosymbolic-Customized-and-Compact-CoPilots/assets/57400980/be16fb07-30a8-4035-8480-fd0ff1e14064)
+Can I eat this food or not? Does it have ingredients I'm allergic to? How can I make this more nutritious or vegan or keto-free? Does this recipe conform to diabetes guidelines? These are simple yet powerful questions that we ask about our food. To answer these questions and more, we introduce: 
 
-## Neurosymbolic Customized and Compact Copilots - Methods and Applications
+𝙉𝙤𝙪𝙧𝙞𝙘𝙝: 𝘼 𝘾𝙪𝙨𝙩𝙤𝙢, 𝘾𝙤𝙢𝙥𝙖𝙘𝙩 𝙖𝙣𝙙 𝙉𝙚𝙪𝙧𝙤𝙨𝙮𝙢𝙗𝙤𝙡𝙞𝙘 𝘿𝙞𝙚𝙩 𝘼𝙄 𝙢𝙤𝙙𝙚𝙡
+https://lnkd.in/eBJhiBDJ 
+
+That analyses the suitability of a given recipe by analyzing ingredients and cooking actions in multiple contexts. The system also provides explanations in the form of reasoning to the users. Given a recipe is not suitable, the system aims to provide alternative recipes or ingredient substitutions.
+
+🔧 𝘾𝙪𝙨𝙩𝙤𝙢: Tailored to analyze and reason over the suitability of a recipe for diabetes and provide alternative recipes or ingredient and cooking action substitutions.
+
+⚙️ 𝘾𝙤𝙢𝙥𝙖𝙘𝙩: Lightweight and cost-effective model, optimized for real-time deployment on consumer-grade hardware
+
+🧠 𝙉𝙚𝙪𝙧𝙤𝙨𝙮𝙢𝙗𝙤𝙡𝙞𝙘: An explainable food recommendation framework that adapts semantic, perceptual, and cognitive framework to ground data with semantic knowledge (semantics), mapping grounded data to disease context (perceptual) and provides reasoning for the recommendation(cognitive) to the users along with the source of knowledge utilized for recommendations. More on - https://lnkd.in/eFNpjCec 
+
+#### ❤️ MTSS Co-pilot: Custom, Compact and Neurosymbolic Behavioral Health Assistance Management
+
+**The Multi-Tiered System of Support (MTSS)** framework is designed to assist students with behavioral strategies by drawing on the support of a network that includes parents, counselors, and school administrators. 
+🚀 However, the intricate nature of the MTSS structure can overwhelm the support network when addressing a student's case due to the numerous options available. 
+🚀 We are pleased to introduce the MTSS-CoPilot, a digital assistant designed to provide essential decision support to the members of a student's support network. This assistant employs an innovative AI approach that ensures its outputs are tailored to the specific needs of the support network, align with expert knowledge, and remain transparent and explainable.
+
+Visit here for the demo: https://lnkd.in/enrFJUeZ
+
+This was one of the three applications showcased in my advisor Amit Sheth's keynote on “Forging Trust in Tomorrow’s AI: A Roadmap for Reliable, Explainable, and Safe NeuroSymbolic AI Systems” at the Knowledge-infused Learning Workshop at ACM KDD 2024.  Slides and links to three real-world applications: https://bit.ly/KDD-KiL 
+The core technology powering the CoPilot uses a custom-compact (right_sized) and neurosymbolic AI system.
+
+🔧 𝘾𝙪𝙨𝙩𝙤𝙢: Tailored to solve specific industry challenges (here focused on student-behavioral health support leveraging various members in the student’s support network), providing focused and practical solutions.
+
+⚙️ 𝘾𝙤𝙢𝙥𝙖𝙘𝙩: Lightweight and cost-effective, optimized for real-time deployment on consumer-grade hardware.
+
+🧠 𝙉𝙚𝙪𝙧𝙤𝙨𝙮𝙢𝙗𝙤𝙡𝙞𝙘: Utilizes advanced reasoning capabilities over carefully curated assets, including specialized data, domain knowledge, and human expertise. This ensures the system delivers reliable and safe outputs by adhering to these curated resources.
+
+## Method and Applications Details
 
 ### Key Features for The Proposed Copilots
 
