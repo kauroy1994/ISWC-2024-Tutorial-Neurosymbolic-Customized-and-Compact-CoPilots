@@ -21,27 +21,23 @@ Large Language Models (LLMs) are credible with open-domain interactions such as 
 
 Can I eat this food or not? Does it have ingredients I'm allergic to? How can I make this more nutritious or vegan or keto-free? Does this recipe conform to diabetes guidelines? These are simple yet powerful questions that we ask about our food. To answer these questions and more, we introduce: 
 
-𝙉𝙤𝙪𝙧𝙞𝙘𝙝: 𝘼 𝘾𝙪𝙨𝙩𝙤𝙢, 𝘾𝙤𝙢𝙥𝙖𝙘𝙩 𝙖𝙣𝙙 𝙉𝙚𝙪𝙧𝙤𝙨𝙮𝙢𝙗𝙤𝙡𝙞𝙘 𝘿𝙞𝙚𝙩 𝘼𝙄 𝙢𝙤𝙙𝙚𝙡
-https://lnkd.in/eBJhiBDJ 
+We introduce 𝙉𝙤𝙪𝙧𝙞𝙘𝙝: 𝘼 𝘾𝙪𝙨𝙩𝙤𝙢, 𝘾𝙤𝙢𝙥𝙖𝙘𝙩 𝙖𝙣𝙙 𝙉𝙚𝙪𝙧𝙤𝙨𝙮𝙢𝙗𝙤𝙡𝙞𝙘 𝘿𝙞𝙚𝙩 𝘼𝙄 𝙢𝙤𝙙𝙚𝙡 - That analyses the suitability of a given recipe by analyzing ingredients and cooking actions in multiple contexts. The system also provides explanations in the form of reasoning to the users. Given a recipe is not suitable, the system aims to provide alternative recipes or ingredient substitutions.
 
-That analyses the suitability of a given recipe by analyzing ingredients and cooking actions in multiple contexts. The system also provides explanations in the form of reasoning to the users. Given a recipe is not suitable, the system aims to provide alternative recipes or ingredient substitutions.
+Visit here for the demo: [Demo link](https://lnkd.in/eBJhiBDJ)
 
 🔧 𝘾𝙪𝙨𝙩𝙤𝙢: Tailored to analyze and reason over the suitability of a recipe for diabetes and provide alternative recipes or ingredient and cooking action substitutions.
 
 ⚙️ 𝘾𝙤𝙢𝙥𝙖𝙘𝙩: Lightweight and cost-effective model, optimized for real-time deployment on consumer-grade hardware
 
-🧠 𝙉𝙚𝙪𝙧𝙤𝙨𝙮𝙢𝙗𝙤𝙡𝙞𝙘: An explainable food recommendation framework that adapts semantic, perceptual, and cognitive framework to ground data with semantic knowledge (semantics), mapping grounded data to disease context (perceptual) and provides reasoning for the recommendation(cognitive) to the users along with the source of knowledge utilized for recommendations. More on - https://lnkd.in/eFNpjCec 
+🧠 𝙉𝙚𝙪𝙧𝙤𝙨𝙮𝙢𝙗𝙤𝙡𝙞𝙘: An explainable food recommendation framework that adapts semantic, perceptual, and cognitive framework to ground data with semantic knowledge (semantics), mapping grounded data to disease context (perceptual) and provides reasoning for the recommendation(cognitive) to the users along with the source of knowledge utilized for recommendations. 
 
 #### ❤️ MTSS Co-pilot: Custom, Compact and Neurosymbolic Behavioral Health Assistance Management
 
 **The Multi-Tiered System of Support (MTSS)** framework is designed to assist students with behavioral strategies by drawing on the support of a network that includes parents, counselors, and school administrators. 
 🚀 However, the intricate nature of the MTSS structure can overwhelm the support network when addressing a student's case due to the numerous options available. 
-🚀 We are pleased to introduce the MTSS-CoPilot, a digital assistant designed to provide essential decision support to the members of a student's support network. This assistant employs an innovative AI approach that ensures its outputs are tailored to the specific needs of the support network, align with expert knowledge, and remain transparent and explainable.
+🚀 We introduce MTSS-CoPilot, a digital assistant designed to provide essential decision support to the members of a student's support network. This assistant employs an innovative AI approach that ensures its outputs are tailored to the specific needs of the support network, align with expert knowledge, and remain transparent and explainable.
 
-Visit here for the demo: https://lnkd.in/enrFJUeZ
-
-This was one of the three applications showcased in my advisor Amit Sheth's keynote on “Forging Trust in Tomorrow’s AI: A Roadmap for Reliable, Explainable, and Safe NeuroSymbolic AI Systems” at the Knowledge-infused Learning Workshop at ACM KDD 2024.  Slides and links to three real-world applications: https://bit.ly/KDD-KiL 
-The core technology powering the CoPilot uses a custom-compact (right_sized) and neurosymbolic AI system.
+Visit here for the demo: [Demo link](https://lnkd.in/enrFJUeZ)
 
 🔧 𝘾𝙪𝙨𝙩𝙤𝙢: Tailored to solve specific industry challenges (here focused on student-behavioral health support leveraging various members in the student’s support network), providing focused and practical solutions.
 
