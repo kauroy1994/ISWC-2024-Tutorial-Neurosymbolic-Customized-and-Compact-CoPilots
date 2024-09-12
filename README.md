@@ -123,7 +123,9 @@ This dual filtering ensures that only **relevant and accurate answers** are prov
 - The model uses the **MiniLM-L6-v2**, a transformer model with only **33 million parameters**. This ensures a balance between **performance** and **accuracy** while keeping resource consumption low.
 - **Spacy** for symbolic triple extraction is lightweight, ensuring that the symbolic reasoning layer adds minimal overhead.
 
-### Key Features for The Proposed Copilots
+# Neurosymbolic Customized and Compact Copilots - Methods and Applications
+
+## Key Features for The Proposed Copilots
 
 | **Feature**           | **Feature Description**                                                                                                                                                             | **Example from Copilot Concept**                                                                                                                                                                             | **How?**                                                                                                                                                                                                                                                                                                                                                                    |
 |-------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -169,4 +171,3 @@ This dual filtering ensures that only **relevant and accurate answers** are prov
    - Continuous feedback from the query engine and logging platform helps to improve the copilot's recommendations, enhancing overall user satisfaction. 
 
 This process would be similar for other copilots like MTSS-CoPilot and SmartPilot, but with a focus on the specific domain (behavioral health management or manufacturing optimization, respectively).
-
