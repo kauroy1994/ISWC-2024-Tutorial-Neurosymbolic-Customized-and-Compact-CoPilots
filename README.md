@@ -97,7 +97,7 @@ This process would be similar for other copilots like MTSS-CoPilot and SmartPilo
 ## 📰 Slides
 🔜 Comming soon .. 
 
-## Preliminary Experiments - Neuro-Symbolic Question-Answer Knowledge Search System
+## 💻 Preliminary Experiments - Neuro-Symbolic Question-Answer Knowledge Search System [[Code](https://github.com/kauroy1994/MTSS-Copilots/tree/kaushik_code_v2)]
 
 This experiment implements a **Question-Answer Knowledge Search System** using **neuro-symbolic AI** principles. The system processes queries, retrieves relevant questions from a user-provided QA dataset, and generates a knowledge panel with extracted entities and relationships. The architecture effectively combines **neural network-based** language understanding and **symbolic reasoning** for precise query answering.
 
@@ -147,50 +147,3 @@ To ensure the system only provides relevant answers, a filtering mechanism is ap
 - **Knowledge Graph Similarity**: If the query passes the neural threshold, the system checks the similarity between **SVO triples** extracted from the query and the matched answer. If this knowledge-graph similarity score is below a threshold (e.g., **0.5**), the system returns a boilerplate response: *"Sorry, we don't have sufficient information to answer this query."*
 
 This dual filtering ensures that only **relevant and accurate answers** are provided to the user.
-
-### Usage
-
-#### Setup and Customization
-
-1. **Customize the Dataset**: 
-   - To use the system, simply provide a **JSON file** containing your domain-specific **questions and answers**. The system will adapt to any content you provide without requiring code changes.
-
-   Example JSON format:
-   ```json
-   [
-       {
-           "question": "What is the role of administrators in MTSS?",
-           "answer": "Administrators oversee the MTSS process and ensure resources are allocated."
-       },
-       {
-           "question": "How does MTSS help students?",
-           "answer": "MTSS provides targeted interventions based on student performance data."
-       }
-   ]
-   ```
-
-2. **Run the Application**:
-   After setting up the dataset and installing dependencies, you can run the Gradio app to interact with the system in a browser.
-
-   ```bash
-   python main.py
-   ```
-
-#### Query Example:
-- **Query**: "How do administrators support the MTSS process?"
-- **Top Matched Question**: "What is the role of administrators in MTSS?"
-- **Answer**: "Administrators oversee the MTSS process and ensure resources are allocated."
-- **Knowledge Panel**: 
-  
-  **Administrators** oversee **MTSS process**
-  
-
-### Requirements
-
-- Python 3.7+
-- `gradio`, `spacy`, `sentence-transformers`, `torch`, `matplotlib`, `pillow`, `numpy`
-
-### Efficiency Considerations
-
-- The model uses the **MiniLM-L6-v2**, a transformer model with only **33 million parameters**. This ensures a balance between **performance** and **accuracy** while keeping resource consumption low.
-- **Spacy** for symbolic triple extraction is lightweight, ensuring that the symbolic reasoning layer adds minimal overhead.
