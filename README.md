@@ -46,4 +46,4 @@ Visit here for the demo: [Demo link](https://lnkd.in/enrFJUeZ)
 🧠 𝙉𝙚𝙪𝙧𝙤𝙨𝙮𝙢𝙗𝙤𝙡𝙞𝙘: Utilizes advanced reasoning capabilities over carefully curated assets, including specialized data, domain knowledge, and human expertise. This ensures the system delivers reliable and safe outputs by adhering to these curated resources.
 
 ## Slides
-<object data="https://github.com/kauroy1994/ISWC-2024-Tutorial-Neurosymbolic-Customized-and-Compact-CoPilots/blob/main/ISWC%20Tutorial%20-%20Slides.pdf"></object>
+[Slide Deck](https://github.com/kauroy1994/ISWC-2024-Tutorial-Neurosymbolic-Customized-and-Compact-CoPilots/blob/main/ISWC%20Tutorial%20-%20Slides.pdf)
