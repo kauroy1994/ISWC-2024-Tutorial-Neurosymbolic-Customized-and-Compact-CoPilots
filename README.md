@@ -3,7 +3,16 @@
 
 📰 Preprint link: [Neurosymbolic Customized and Compact CoPilots](https://scholarcommons.sc.edu/cgi/viewcontent.cgi?article=1628&context=aii_fac_pub)
 
-
+## Tutorial Details
+### Detailed Program
+ - Part 1: (20 mins) Neurosymbolic Customized and Compact Copilots
+ -  Part 2 (20 Mins) - Use Case Example: Multi Tiered System of Supports (MTSS)
+ -  Part 3 (40 Mins) - Demonstrating Preliminary NeSy-CC Copilots (MTSS)
+ -  Part 4 (20 Mins) - Future Work and Vision (MTSS)
+   
+### Tutorial date and time: Nov 12th 2024, 9-10:40am
+### Slides🔜  [Link](https://docs.google.com/presentation/d/1f_3LwvoARdOw7H_fHLMn20IUdwXbHltDnGTdS6M5jYg/edit?usp=sharing)
+### Code🔜  [Github](https://github.com/kauroy1994/ISWC-2024-Tutorial-Neurosymbolic-Customized-and-Compact-CoPilots)
 
 ## Abstract
 Large Language Models (LLMs) are credible with open-domain interactions such as question answering, summarization, and explanation generation [1]. LLM reasoning is based on parametrized knowledge, and as a consequence, the models often produce absurdities and inconsistencies in outputs (eg, hallucinations and confirmation biases)[2]. In essence, they are fundamentally hard to control to prevent off-the-rails behaviors, are hard to fine-tune, customize for tailored needs, prompt effectively (due to the “tug-of-war” between external and parametric memory), and extremely resource-hungry due to the enormous size of their extensive parametric configurations [3, 4]. Thus, significant challenges arise when these models are required to perform in critical applications in domains such as healthcare and finance, that need better guarantees and in turn, need to support grounding, alignment, and instructibility. AI models for such critical applications should be customizable or tailored as appropriate for supporting user assistance in various tasks, compact to perform in real-world resource-constraint settings, and capable of controlled, robust, reliable, interpretable, and grounded reasoning (grounded in rules, guidelines, and protocols)[5]. This special session explores the development of compact, custom neurosymbolic AI models and their use through human-in-the-loop co-pilots for use in critical applications [6].
@@ -44,5 +53,3 @@ Visit here for the demo: [Demo link](https://lnkd.in/enrFJUeZ)
 ⚙️ 𝘾𝙤𝙢𝙥𝙖𝙘𝙩: Lightweight and cost-effective, optimized for real-time deployment on consumer-grade hardware.
 
 🧠 𝙉𝙚𝙪𝙧𝙤𝙨𝙮𝙢𝙗𝙤𝙡𝙞𝙘: Utilizes advanced reasoning capabilities over carefully curated assets, including specialized data, domain knowledge, and human expertise. This ensures the system delivers reliable and safe outputs by adhering to these curated resources.
-
-## Slides  🔜  [Link](https://docs.google.com/presentation/d/1f_3LwvoARdOw7H_fHLMn20IUdwXbHltDnGTdS6M5jYg/edit?usp=sharing)
