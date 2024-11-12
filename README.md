@@ -10,9 +10,75 @@
  -  Part 3 (40 Mins) - Demonstrating Preliminary NeSy-CC Copilots (MTSS)
  -  Part 4 (20 Mins) - Future Work and Vision (MTSS)
    
-### Tutorial date and time: Nov 12th 2024, 9-10:40am
+### Tutorial date and time: Nov 12th 2024, 11am-12:40pm
 ### Slides🔜  [Link](https://docs.google.com/presentation/d/1f_3LwvoARdOw7H_fHLMn20IUdwXbHltDnGTdS6M5jYg/edit?usp=sharing)
-### Code🔜  [Github](https://github.com/kauroy1994/ISWC-2024-Tutorial-Neurosymbolic-Customized-and-Compact-CoPilots)
+### Code🔜 
+* [Github](https://github.com/kauroy1994/ISWC-2024-Tutorial-Neurosymbolic-Customized-and-Compact-CoPilots)
+* [Versions](https://github.com/kauroy1994/MTSS-Copilots)
+* Convert to QA
+  ```python
+  from typing import List
+  import json
+  from pydantic import BaseModel
+  from groq import Groq
+  
+  groq = Groq(api_key=GROQ_API_KEY)
+  
+  # Define the data model for question and answer pairs
+  class QuestionAnswer(BaseModel):
+      question: str
+      answer: str
+  
+  class QAResponse(BaseModel):
+      qa_pairs: List[QuestionAnswer]
+
+  def get_qa_pairs(text: str) -> QAResponse:
+      chat_completion = groq.chat.completions.create(
+          messages=[
+              {
+                  "role": "system",
+                  "content": "You are a helpful assistant that generates question-and-answer pairs in JSON format.\n"
+                  f"The JSON object must follow this schema: {json.dumps(QAResponse.model_json_schema(), indent=2)}",
+              },
+              {
+                  "role": "user",
+                  "content": f"Generate question and answer pairs for the following text:\n\n{text}",
+              },
+          ],
+          model="llama3-8b-8192",
+          temperature=0.0,
+          stream=False,
+          response_format={"type": "json_object"},
+      )
+      return QAResponse.model_validate_json(chat_completion.choices[0].message.content)
+
+  def print_qa_pairs(qa_response: QAResponse):
+      print("Question and Answer Pairs:")
+      for pair in qa_response.qa_pairs:
+          print(f"Q: {pair.question}")
+          print(f"A: {pair.answer}")
+          print()
+
+  # Example usage
+  text_input = """
+  MTSS stands for Multi-Tiered System of Supports, a framework that helps schools and districts support students' needs through research-based strategies. MTSS aims to improve student achievement and social and emotional competencies by: 
+   
+  Providing equitable access to instruction and support 
+   
+  Creating nurturing learning environments 
+   
+  Integrating education, health, and human services systems 
+   
+  Using data to inform decision-making 
+   
+  MTSS is based on a public health approach and includes four key components: screening, progress monitoring, multi-level prevention system, and data-based decision making. 
+   
+  MTSS can also help identify students with learning or other disabilities, depending on state law. MTSS began as Response to Instruction and Intervention (RTI), which was intended to replace the practice of labeling students as having learning disabilities.
+  """
+  
+  qa_response = get_qa_pairs(text_input)
+  print_qa_pairs(qa_response)
+```
 
 ## Abstract
 Large Language Models (LLMs) are credible with open-domain interactions such as question answering, summarization, and explanation generation [1]. LLM reasoning is based on parametrized knowledge, and as a consequence, the models often produce absurdities and inconsistencies in outputs (eg, hallucinations and confirmation biases)[2]. In essence, they are fundamentally hard to control to prevent off-the-rails behaviors, are hard to fine-tune, customize for tailored needs, prompt effectively (due to the “tug-of-war” between external and parametric memory), and extremely resource-hungry due to the enormous size of their extensive parametric configurations [3, 4]. Thus, significant challenges arise when these models are required to perform in critical applications in domains such as healthcare and finance, that need better guarantees and in turn, need to support grounding, alignment, and instructibility. AI models for such critical applications should be customizable or tailored as appropriate for supporting user assistance in various tasks, compact to perform in real-world resource-constraint settings, and capable of controlled, robust, reliable, interpretable, and grounded reasoning (grounded in rules, guidelines, and protocols)[5]. This special session explores the development of compact, custom neurosymbolic AI models and their use through human-in-the-loop co-pilots for use in critical applications [6].
