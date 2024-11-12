@@ -11,6 +11,7 @@
  -  Part 4 (20 Mins) - Future Work and Vision (MTSS)
    
 ### Tutorial date and time: Nov 12th 2024, 11am-12:40pm
+### Tutorial Location: Live ! Casino and Hotel, Maryland, Limelight room
 ### Slides🔜  [Link](https://docs.google.com/presentation/d/1f_3LwvoARdOw7H_fHLMn20IUdwXbHltDnGTdS6M5jYg/edit?usp=sharing)
 
 ## Abstract
