@@ -120,3 +120,86 @@ Visit here for the demo: [Demo link](https://lnkd.in/enrFJUeZ)
   qa_response = get_qa_pairs(text_input)
   print_qa_pairs(qa_response)
   ```
+* Judge LLM
+  ```python
+  from typing import Optional
+  import json
+  from pydantic import BaseModel
+  from groq import Groq
+  
+  # Initialize the main and judge LLM clients
+  main_llm = Groq()
+  judge_llm = Groq()
+  
+  # Define the data model for judgment
+  class JudgeResponse(BaseModel):
+      is_accurate: bool
+      score: float  # A score between 0 and 1, where 1 is fully accurate
+      comment: Optional[str]
+  
+  def generate_response(prompt: str) -> str:
+      # Generate a response using the main LLM
+      chat_completion = main_llm.chat.completions.create(
+          messages=[
+              {
+                  "role": "system",
+                  "content": "You are a helpful assistant that answers questions.",
+              },
+              {
+                  "role": "user",
+                  "content": prompt,
+              },
+          ],
+          model="llama3-8b-8192",
+          temperature=0.5,
+          stream=False,
+      )
+      return chat_completion.choices[0].message.content
+  
+  def judge_response(prompt: str, response: str) -> JudgeResponse:
+      # Use the judge LLM to evaluate the accuracy of the response
+      chat_completion = judge_llm.chat.completions.create(
+          messages=[
+              {
+                  "role": "system",
+                  "content": "You are an expert judge that evaluates the accuracy of responses.\n"
+                  f"The JSON object must follow this schema: {json.dumps(JudgeResponse.model_json_schema(), indent=2)}",
+              },
+              {
+                  "role": "user",
+                  "content": f"""
+                  Given the following prompt and response, evaluate the response for its accuracy.
+                  Return your evaluation as JSON, specifying whether the response is accurate (true or false),
+                  a score between 0 and 1 where 1 is fully accurate, and an optional comment.
+                  
+                  Prompt: "{prompt}"
+                  Response: "{response}"
+                  """,
+              },
+          ],
+          model="llama3-8b-8192",
+          temperature=0,
+          stream=False,
+          response_format={"type": "json_object"},
+      )
+      return JudgeResponse.model_validate_json(chat_completion.choices[0].message.content)
+
+    def evaluate_llm_response(prompt: str):
+        # Generate a response from the main LLM
+        response = generate_response(prompt)
+        print("Generated Response:")
+        print(response)
+    
+        # Judge the accuracy of the response
+        judgment = judge_response(prompt, response)
+        print("\nJudgment:")
+        print(f"Is Accurate: {judgment.is_accurate}")
+        print(f"Score: {judgment.score}")
+        if judgment.comment:
+            print(f"Comment: {judgment.comment}")
+    
+    # Example usage
+    prompt = "Explain the importance of fast language models."
+    evaluate_llm_response(prompt)
+
+  ```
