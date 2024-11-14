@@ -7,8 +7,8 @@
    
 ### 📅 Date and time
 Nov 12th 2024, 11am-12:40pm
-### ✈️ Location
-Live ! Casino and Hotel, Maryland, Limelight room
+### ✈️ Vemue
+International Semantic Web Conference (ISWC), 2024
 ### 📎 [Slides](https://docs.google.com/presentation/d/1f_3LwvoARdOw7H_fHLMn20IUdwXbHltDnGTdS6M5jYg/edit?usp=sharing)
 ### 📹 [Video](https://youtu.be/43Eba4qbrYU)
 
