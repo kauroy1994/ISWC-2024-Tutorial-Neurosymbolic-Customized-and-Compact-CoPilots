@@ -7,7 +7,7 @@
    
 ### 📅 Date and time
 Nov 12th 2024, 11am-12:40pm
-### ✈️ Vemue
+### ✈️ Venue
 [International Semantic Web Conference (ISWC), 2024](https://iswc2024.semanticweb.org/event/3715c6fc-e2d7-47eb-8c01-5fe4ac589a52/websitePage:25d20664-9b77-4530-9fbf-93fdd86a28ab)
 ### 📎 [Slides](https://docs.google.com/presentation/d/1f_3LwvoARdOw7H_fHLMn20IUdwXbHltDnGTdS6M5jYg/edit?usp=sharing)
 ### 📹 [Video](https://youtu.be/43Eba4qbrYU)
